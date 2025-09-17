@@ -20,27 +20,38 @@
     </Window.SystemBackdrop>
 
     <Grid
-        x:Name="Root"
-        Height="44"
-        Margin="0,0,0,0"
-        HorizontalAlignment="Right"
-        VerticalAlignment="Top"
-        Background="Transparent"
-        BorderBrush="Red"
-        BorderThickness="0">
+    x:Name="Root"
+    Height="44"
+    Margin="0,0,0,0"
+    
+    VerticalAlignment="Top"
+    Background="Transparent"
+    BorderBrush="Red"
+    BorderThickness="1">
 
         <Grid.Resources>
             <ResourceDictionary />
         </Grid.Resources>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto" />
-            <ColumnDefinition Width="400" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="850" />
+            <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <ContentControl x:Name="MainContent" Grid.Column="0">
-            <local:BandsItemsControl />
-        </ContentControl>
+        <Grid 
+        x:Name="MainContent" 
+        Grid.Column="2" 
+        Loaded="PetPlayground_Loaded" 
+        Margin="0,0,550,0" 
+        BorderBrush="Green"
+        BorderThickness="1">
+            <Grid.Clip>
+                <!-- Will be sized in code-behind -->
+                <RectangleGeometry x:Name="PlaygroundClip" />
+            </Grid.Clip>
+
+        </Grid>
 
     </Grid>
 </winuiex:WindowEx>
