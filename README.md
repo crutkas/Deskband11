@@ -6,6 +6,10 @@ A modern resurrection of the Windows <=10 Deskbands, written in WinUI 3 with WAS
 > [!WARNING]
 > 🏗️ under construction. Hackathon-tier code 🏗️
 
+> [!INFORMATION]
+> This project is based on a work w/ Deskband11 and VS Code Pets by @tonybaloney
+> it is a hackathon + hackathon.  Code from PowerToys needs to be borrowed for getting information about the taskbar to better size stuff up.
+
 This works by creating a transparent always-on-top WinUI3 window, and parenting
 it to the taskbar. Then we add a clip region to the window to match the
 content's size, so it doesn't interfere with other taskbar interactions.
