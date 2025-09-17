@@ -6,7 +6,7 @@ A modern resurrection of the Windows <=10 Deskbands, written in WinUI 3 with WAS
 > [!WARNING]
 > 🏗️ under construction. Hackathon-tier code 🏗️
 
-> [!INFORMATION]
+> [!NOTE]
 > This project is based on a work w/ Deskband11 and VS Code Pets by @tonybaloney
 > it is a hackathon + hackathon.  Code from PowerToys needs to be borrowed for getting information about the taskbar to better size stuff up.
 
